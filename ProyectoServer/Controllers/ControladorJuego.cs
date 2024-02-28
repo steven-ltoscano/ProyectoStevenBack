@@ -13,8 +13,7 @@ namespace ProyectoServer.Controllers
 
         public ActionResult<string> Play(string p1, string p2)
         {
-
-            if (p1 != choices[0] && p1 != choices[1] && p1 != choices[2] || p2 != choices[0] && p2 != choices[1] && p2 != choices[2])
+            if (!choices.Contains(p1) || !choices.Contains(p2))
                 return resultado[4];
 
             if (p1 == null || p2 == null)

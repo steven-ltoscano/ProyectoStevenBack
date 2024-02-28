@@ -5,7 +5,7 @@ builder.Services.AddControllers();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin",
-    builder => builder.WithOrigins("http://localhost:3000")
+    builder => builder.WithOrigins("https://agreeable-island-0b0628010.4.azurestaticapps.net")
     .AllowAnyHeader()
     .AllowAnyMethod());
 });
